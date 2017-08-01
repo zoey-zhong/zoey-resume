@@ -1,78 +1,388 @@
-﻿<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<title>Zoey</title>
-		<link rel="stylesheet" type="text/css" href="css/base.css"/>
-		<link rel="stylesheet" type="text/css" href="img/myicon/iconfont.css"/>
-		<link rel="stylesheet" type="text/css" href="css/index.css"/>
-	</head>
-	<body>
-		<div class="nav">
-			<div class="container">
-				<i class="iconfont icon-z"></i>
-				
-			</div>
-		</div>
-		<div class="head">
-			<div class="container">
-				<div class="mypic">
-					<img src="img/63.jpg"/>
-				</div>
-				<p>Hi,I'm Zoey</p>
-				<a class="more"><i class="iconfont icon-xiangxia"></i></a>
-			</div>
-		</div>
-		<div class="chart"></div>
-		<div class="movie"></div>
-		<div  class="aboutme">
-			<div class="container">
-				<h4>个人信息</h4>
-				<div class="about-list">
-					<div>
-						
-					</div>
-					<div>
-						
-					</div>
-					<div>
-						
-					</div>
-					
-				</div>
-			</div>
-		</div>
-		<div class="skill">
-			<div class="container">
-				<ul>
-					<li><img src="img/html.png"/></li>
-					<li><img src="img/css.png"/></li>
-					<li><img src="img/javascript.png"/></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
-			</div>
-		</div>
-		
-		<div class="intern">
-			<div class="container">
-				<h4>intern</h4>
-				<div class="intern-detail"></div>
-			</div>
-		</div>
-		<div class="contact">
-			<div class="container">
-				<h4>contact</h4>
-				<div></div>
-			</div>
-		</div>
-	</body>
-	<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/echarts.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/china.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="简约web前端个人简历,web前端,钟燕简历,zoey,前端个人博客,前端工程师">
+    <meta name="description" content="钟燕WEB前端工程师的个人简历">
+    <meta name="author" content="Zoey-zhong">
+    <title>Web前端工程师,Zoey简历</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="image/myicon/iconfont.css"/>
+    <link rel="stylesheet" href="css/index.css">
+    <!--[if lte IE 9]>
+    <script type="text/javascript">
+        window.location = "http://www.xiaoyuezhang.com/error.html"
+    </script>
+    <![endif]-->
+<!-- xiaoyuezhang.com Baidu tongji analytics -->
+<!--<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?f87e415f9d1f6111b1d34c5f96927d9b";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>-->
+</head>
+<body>
+<div class="content ">
+    <div class="cv-container">
+        <div id="section1" class="section active">
+            <div id="top" title="顶部">
+            	<i class="iconfont icon-top top"></i>
+                <!--<img src="image/top.png" alt="回到顶部">-->
+            </div>
+            <div class="myIntro">
+                <h1 class="fade">Hello, I'm Zoey</h1>
+                <h3 class="fade">一个爱学习，知上进，重细节，易相处的野生Web攻城狮</h3>
+                <span class="active fade" id="abMe">少废话，把你的<br />简历给俺呈上来</span>
+                <span id="mypro" class="fade">我就是随便看看~</span>
+            </div>
+        </div>
+
+        <div id="section2" class="section">
+            <!-- 导航条-->
+            <div id="nav-bar" class="bar">
+                <div class="container">
+                    <a href="drip.html"> <div class="fl"><i class="iconfont icon-z">oey</i></div></a>
+                    <ul class="fr nav-ul">
+                        <li>关于我</li>
+                        <li>求职意向</li>
+                        <li>作品集</li>
+                        <li>技术掌握</li>
+                        <li>我的经历</li>
+                        <li>联系我</li>
+                    </ul>
+                    <div class="fr more-nav">
+                        <img src="image/more.png" alt="更多">
+                    </div>
+                </div>
+                <!--<ul class="nav-ul nav-xs-ul">
+                    <li>关于我</li>
+                    <li>求职意向</li>
+                    <li>作品集</li>
+                    <li>技术掌握</li>
+                    <li>我的经历</li>
+                    <li>联系我</li>
+                </ul>-->
+            </div>
+
+            <!--关于我-->
+            <h2>呐，这是我的简历~</h2>
+            <hr>
+            <div class="center fades">
+                <p class="center"><img src="image/dog.jpg" alt="头像" /></p>
+                <div class="my-intro">
+                    <p>
+                    	原坐标广西南宁，一座只有热天冷天，没有四季的小城，来到了传说中的魔都上海，1888.6公里的距离，也许就是我来到这里，寻找自我的距离。
+                    </p>
+                    <p>跌跌撞撞，加起来工作的时间也差不多满一年了，从大二上的一门网页设计课，到现在入了前端的小门，感谢一路帮助过我的老师，同事，朋友们</p>
+                </div>
+            </div>
+        </div>
+        <div id="section3" class="section">
+            <h2>求职意向</h2>
+            <hr>
+            <div class="container center fades">
+                <div class="col-md-3 col-xs-6 skill-ps skill">
+                    <p><img src="image/photoshop.png" alt="切图"></p>
+                    <p class="ptitle">PS切图</p>
+                    <p>从PSD上切出页面需要的图片</p>
+                    <p>将小图标合成spirts优化。</p>
+                </div>
+                <div class="col-md-3 col-xs-6 skill-web skill">
+                    <p><img src="image/css.png" alt="css"></p>
+                    <p class="ptitle">网页制作</p>
+                    <p>响应式页面,简单不冗余代码。</p>
+                    <p>css3流畅动画效果，兼容不同浏览器。</p>
+                </div>
+                <div class="col-md-3 col-xs-6 skill-js skill">
+                    <p><img src="image/javascript.png" alt="js"></p>
+                    <p class="ptitle">前端功能</p>
+                    <p>用JS完成常见的前端功能特效</p>
+                    <p>用AJAX读取后台数据。</p>
+                </div>
+                <div class="col-md-3 col-xs-6 skill-h5 skill">
+                    <p><img src="image/html.png" alt="h5"></p>
+                    <p class="ptitle">h5页面</p>
+                    <p>移动端页面的书写</p>
+                    <p>兼容平板、安卓、IOS不同终端。</p>
+                </div>
+            </div>
+        </div>
+        <div id="section4" class="section">
+            <h2>作品集</h2>
+            <hr>
+            <div class="container center fades">
+                <p class="center intros">写jq前端功能的时候，我的宗旨是能手写就手写，不依赖插件。手写代码更简洁高效，也更能提升自己技术。</p>
+                <div class="col-md-3 col-xs-6">
+                    <div class="imgbox">
+                        <img src="image/coding.gif" alt="作品配图">
+                    </div>
+                    <a href="cart.html" target="_blank">
+                        <div class="zp-cover">
+                            <h4>商城类页面</h4>
+                            <p>购物车结算jq，订单的选择或删除、金额的计算。</p>
+                            <i class="iconfont icon-meiribikan "></i>
+                            <!--<img src="image/search.png" alt="查看">-->
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="imgbox">
+                        <img src="image/coding.gif" alt="作品配图">
+                    </div>
+                    <a href="http://www.cbecm.com/Analysis/Gametest/pc_test" target="_blank">
+                        <div class="zp-cover" >
+                            <h4>测试类页面</h4>
+                            <p>AJAX获取后台数据，用数组读取选项与题目。记录测试者的选项返给后台。</p>
+                            <i class="iconfont icon-meiribikan "></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6 ">
+                    <div class="imgbox">
+                        <img src="image/coding.gif" alt="作品配图">
+                    </div>
+                    <a href="http://www.cbecm.com/Live/Index/index" target="_blank">
+                        <div class="zp-cover">
+                            <h4>直播类页面</h4>
+                            <p>直播页面响应式，css3 jq运用较多</p>
+                            <i class="iconfont icon-meiribikan "></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6 ">
+                    <div class="imgbox">
+                        <img src="image/coding.gif" alt="作品配图">
+                    </div>
+                    <a href="http://www.cbecm.com/Anchor/Anchor/anchor" target="_blank">
+                        <div class="zp-cover">
+                            <h4>列表类页面</h4>
+                            <p>无缝轮播手写，花瓣动画。</p>
+                           <i class="iconfont icon-meiribikan "></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6 ">
+                    <div class="imgbox">
+                        <img src="image/coding.gif" alt="作品配图">
+                    </div>
+                    <a href="http://www.cbecm.com/Anchor/Anchor/anchor_detai?id=RjA4QzAyMzUtNERCNC04MjM1LUY2NTQtQUM2NTdGMkQ4OTcx" target="_blank">
+                        <div class="zp-cover">
+                            <h4>详情类页面</h4>
+                            <p>视频播放，富文本编辑器手写。</p>
+                            <i class="iconfont icon-meiribikan "></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6 ">
+                    <div class="imgbox">
+                        <img src="image/coding.gif" alt="作品配图">
+                    </div>
+                    <a href="http://www.cbecm.com/Home/Index/index" target="_blank">
+                        <div class="zp-cover">
+                            <h4>官网类首页</h4>
+                            <p>多数据响应式网页，能兼容不同大小电脑分辨率</p>
+                            <i class="iconfont icon-meiribikan "></i>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-xs-6 ">
+                    <div class="imgbox">
+                        <img src="image/coding.gif" alt="作品配图">
+                    </div>
+                    <a href="http://www.cbecm.com/Live/Index/m_index" target="_blank">
+                        <div class="zp-cover">
+                            <h4>移动端页面</h4>
+                            <p>列表页，兼容安卓、ios、平板</p>
+                            <i class="iconfont icon-meiribikan "></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="imgbox">
+                        <img src="image/coding.gif" alt="作品配图">
+                    </div>
+                    <a href="drip.html" target="_blank">
+                        <div class="zp-cover">
+                            <h4>我的技术博客</h4>
+                            <p>自己平时的知识点积累~</p>
+                            <i class="iconfont icon-meiribikan "></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="section5" class="section">
+            <h2>技术掌握</h2>
+            <hr>
+            <div class="container center fades">
+                <div class="col-md-3 col-xs-6">
+                   <div class="wrap-box">
+                       <div class="circle-wrap clip-auto">
+                           <div class="left-clip percent"></div>
+                           <div class="right-clip percent"></div>
+                       </div>
+                       <div class="circle-num">
+                           <span>90</span>%
+                       </div>
+                   </div>
+                    <p class="ptitle">HTML</p>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="wrap-box">
+                        <div class="circle-wrap clip-auto">
+                            <div class="left-clip percent"></div>
+                            <div class="right-clip percent"></div>
+                        </div>
+                        <div class="circle-num">
+                            <span>90</span>%
+                        </div>
+                    </div>
+                    <p class="ptitle">CSS</p>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="wrap-box">
+                        <div class="circle-wrap clip-auto">
+                            <div class="left-clip percent"></div>
+                            <div class="right-clip percent"></div>
+                        </div>
+                        <div class="circle-num">
+                            <span>85</span>%
+                        </div>
+                    </div>
+                    <p class="ptitle">JS</p>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="wrap-box">
+                        <div class="circle-wrap clip-auto">
+                            <div class="left-clip percent"></div>
+                            <div class="right-clip percent"></div>
+                        </div>
+                        <div class="circle-num">
+                            <span>85</span>%
+                        </div>
+                    </div>
+                    <p class="ptitle">JQ</p>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="wrap-box">
+                        <div class="circle-wrap clip-auto">
+                            <div class="left-clip percent"></div>
+                            <div class="right-clip percent"></div>
+                        </div>
+                        <div class="circle-num">
+                            <span>40</span>%
+                        </div>
+                    </div>
+                    <p class="ptitle">VUE,NG,Node.js</p>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="wrap-box">
+                        <div class="circle-wrap clip-auto">
+                            <div class="left-clip percent"></div>
+                            <div class="right-clip percent"></div>
+                        </div>
+                        <div class="circle-num">
+                            <span>80</span>%
+                        </div>
+                    </div>
+                    <p class="ptitle">SWIPER,FULLPAGE</p>
+                </div>
+            </div>
+        </div>
+        <div id="section6" class="section">
+            <h2>我的经历</h2>
+            <hr>
+            <div class="container center fades">
+                <ul class="my-xp">
+                    <li>
+                        <div class="date-box">
+                           <p>10/2016</p>
+                            <p>-</p>
+                            <p>06/2017</p>
+                        </div>
+                        <div class="my-work my-xp-box">
+                            <strong>上海未英网络科技</strong>
+                            <p class="ptitle">技术部/前端工程师</p>
+                            <p>负责所在项目线具体前端功能的实现；PSD切图后构建页面框架</p>
+                            <p>利用JS、CSS3书写前端功能，让页面更充实丰富</p>
+                            <p>并配合后台用ajax进行数据交互。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="date-box">
+                            <p>09/2016</p>
+                            <p>-</p>
+                            <p>05/2016</p>
+                        </div>
+                        <div class="my-school my-xp-box">
+                            <strong>广西南宁峰值文化传播有限公司</strong>
+                            <p class="ptitle">技术部/前端工程师</p>
+                            <p>主要负责动漫业务pc端及移动端的多个页面的开发，原有网站的前端界面更新及维护，使其达到更好的视觉体验和用户体验。</p>
+                            <p>将切好的页面适配到网站，使用CSS3/html5实现整体页面风格。</p>
+                            <p>根据工作安排完成代码编写，确保符合规范的前端代码规范。</p>
+                            <p>团队协作，配合项目经理的协调，完成创意设计；与后端开发团队紧密配合，确保代码有效对接；</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="date-box">
+                            <p>06/2016</p>
+                            <p>-</p>
+                            <p>09/2012</p>
+                        </div>
+                        <div class="my-school my-xp-box">
+                            <strong>福州大学至诚学院</strong>
+                            <p class="ptitle">大学本科</p>
+                            <p>cet-4</p>
+                            <p>获得全国计算机二级</p>
+                            <p>篮球赛第一名</p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div id="section7" class="section">
+            <h2>联系我</h2>
+            <hr>
+            <div class="container center fades">
+                <div class="flow">
+                   <p class="center">让我到你的碗里去~</p>
+                   <img src="image/erweima.png" class="wechat"/>
+                   <p class="center">或者，给我发个邮件：zoey2099@163.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</div>
+<script src="js/jquery-2.1.0.js"></script>
+<script src="js/mycv.js"></script>
+<script>
+    (function(){
+        //百度自动链接推送
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+</body>
 </html>
