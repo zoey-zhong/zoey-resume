@@ -1,6 +1,30 @@
 
 
 
+
+
+var t1=setInterval(fn1,10000);
+var t2=setInterval(fn2,11000);
+function fn1(){
+	$('aside').css('background-position',"0 -1000px")
+}
+function fn2(){
+	$('aside').css('background-position',"0 0")
+}
+
+$('aside').hover(function(){
+	clearInterval(t1,t2)
+	fn1();
+	
+},function(){
+	fn2();
+	t1=setInterval(fn1,10000);
+	t2=setInterval(fn2,11000)
+})
+
+
+
+
 //鑳屾櫙闅忔満
 $(function() {
     var length = 3;
@@ -56,7 +80,7 @@ $(function() {
     });
     //鎴戠殑浣滃搧
     $("#mypro").bind("click", function () {
-        $(".nav-ul li:nth-child(3)").click();
+        $(".nav-ul li:nth-child(6)").click();
     });
     //瀵艰埅鐐瑰嚮
     $(".nav-ul li").bind("click", function () {

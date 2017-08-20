@@ -48,22 +48,23 @@ body{
 #section1{
     color: #2c3e50;
     position: relative;
-    /*background-image: url(../image/intro-bg.jpg);*/
+    background-image: url(../image/bg0.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     overflow: hidden;
 }
 #section5{
-    background: url("../image/bg5.jpg") no-repeat center;
+    background: url("../image/skill.jpg") no-repeat center;
     background-attachment: fixed;
 }
 #section6{
-    background: url("../image/bg4.jpg") no-repeat center;
+    background: url("../image/car1.jpg") no-repeat center;
     background-attachment: fixed;
+    color: white;
 }
 #section7{
-    background: url("../image/bg6.jpg") no-repeat center;
+    background: url("../image/final1.jpg") no-repeat center;
     background-attachment: fixed;
 }
 .cv-container{
@@ -118,7 +119,7 @@ body{
     min-height: 100vh;
     height: auto;
 }
-#section2#section6{
+#section2,#section6{
     height: 80vh;
 }
 #section6{
@@ -220,7 +221,8 @@ body{
     text-align: center;
     letter-spacing: 2px;
     transition: all 0.35s;
-    background: rgba(256,256,256,0.5);
+    color: white;
+    
     
 }
 #section1  h1{
@@ -229,14 +231,15 @@ body{
 #section1 div.myIntro > span{
     display: inline-block;
     width:150px;
-    height:60px;
-    padding: 5px;
+    height:40px;
     font-size: 16px;
-    border:  1px solid ;
     border-radius: 5px;
-    margin: 5px;
     cursor: pointer;
-    background: rgba(256,256,256,0.8);
+    text-align: center;
+    line-height: 40px;
+    margin: 5px;
+    /*background: rgba(256,256,256,0.8);*/
+   background: rgb(221,240,237);
 }
 
 #section1 div > span:hover, #section1 div > span.active{
@@ -353,18 +356,18 @@ div.skill p{
 	width:150px;
 	border-radius:50%;
 	box-shadow: 5px 5px 10px gray;
-	margin-left: 50px;
 	position: relative;
+	overflow: hidden;
 	}
 .skill p:nth-child(1):hover{
-	box-shadow: 5px 5px 10px lightseagreen;
+	transform: scale(1.1);
 }	
 .skill img{
 	position: absolute;
 	top:50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-    width: 80px;
+   height: 100%;
     border-radius: 0!important;
     vertical-align: middle;
 }
@@ -405,6 +408,7 @@ div.skill p{
     font-size: 16px;
     font-weight: 600;
     color: #ffffff;
+    margin-top: 15px;
 }
 
 #section4 .container > div .zp-cover p{
@@ -576,6 +580,7 @@ div.skill p{
     font-size: 16px;
     font-weight: 600;
     line-height: 30px;
+    color: black;
 }
 #section6 .my-school{
     width: 40%;
@@ -613,9 +618,21 @@ h4{
 	font-size: 60px;
 }
 .wechat{
-	margin-top: 20px;
+	margin: 20px 0;
 	width: 250px;
 }
+
+aside{
+	position: fixed;
+	top:35%;
+	left: 0;
+	height: 100px;
+	width:70px;
+	overflow: hidden;
+	background: url(../image/b2topr.png) no-repeat;
+	background-position: 0 0;
+}
+
 /*
     屏幕宽度小于1224px
 */
@@ -643,6 +660,7 @@ h4{
     #section6 .date-box{
         left: 0;
         margin-left: 0;
+        color: black;
     }
     #section6 .my-xp:before{
         left: 85px;
@@ -666,6 +684,9 @@ h4{
     }
     .more-nav{
         display: block;
+    }
+    .more-nav i{
+    	font-size: 40px;
     }
     /*我的作品hover改变*/
     #section4 .container > div .zp-cover{
