@@ -351,6 +351,7 @@ div.skill p{
 	margin-left: 10%;
 	position: relative;
 	overflow: hidden;
+	margin: 0 auto;
 	}
 .skill p:nth-child(1):hover{
 	transform: scale(1.1);
@@ -363,6 +364,7 @@ div.skill p{
    	height: 100%;
     border-radius: 0!important;
     vertical-align: middle;
+    
 }
 .ptitle{
     color: #E87E04;
