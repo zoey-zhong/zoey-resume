@@ -353,7 +353,7 @@ div.skill p{
 	width:150px;
 	border-radius:50%;
 	box-shadow: 5px 5px 10px gray;
-	margin-left: 50px;
+	margin-left: 10%;
 	position: relative;
 	}
 .skill p:nth-child(1):hover{
@@ -666,6 +666,9 @@ h4{
     }
     .more-nav{
         display: block;
+    }
+    .more-nav i{
+    	font-size: 40px;
     }
     /*我的作品hover改变*/
     #section4 .container > div .zp-cover{
