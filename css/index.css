@@ -56,15 +56,18 @@ body{
 }
 #section5{
     background: url("../image/skill.jpg") no-repeat center;
+    background-size: cover;
     background-attachment: fixed;
 }
 #section6{
     background: url("../image/car1.jpg") no-repeat center;
     background-attachment: fixed;
+    background-size: cover;
     color: white;
 }
 #section7{
     background: url("../image/final1.jpg") no-repeat center;
+    background-size: cover;
     background-attachment: fixed;
 }
 .cv-container{
@@ -123,10 +126,14 @@ body{
     height: 80vh;
 }
 #section6{
-    height: 125vh;
+    height: 152vh;
 }
-#section3, #section5{
+#section3{
     height: 70vh;
+    padding-bottom: 100px;
+}
+#section5{
+    height: 150vh;
     padding-bottom: 100px;
 }
 /************section1*/
@@ -189,22 +196,7 @@ body{
         -webkit-transform: scale(1);
     }
 }
-.bg-img li:nth-child(1){
-    background: url(../image/bg1.jpg) no-repeat center ;
-    background-size: cover;
-}
-.bg-img li:nth-child(2){
-    background: url(../image/bg2.jpg) no-repeat center ;
-    background-size: cover;
-}
-.bg-img li:nth-child(3){
-    background: url(../image/bg3.jpg) no-repeat center ;
-    background-size: cover;
-}
-.bg-img li:nth-child(4){
-    background: url(../image/bg4.jpg) no-repeat center ;
-    background-size: cover;
-}
+
 #section1 h3{
     letter-spacing: 3px;
     /*color: #96a3b2;*/
@@ -239,7 +231,7 @@ body{
     line-height: 40px;
     margin: 5px;
     /*background: rgba(256,256,256,0.8);*/
-   background: rgb(221,240,237);
+   background: rgb(25,148,117);
 }
 
 #section1 div > span:hover, #section1 div > span.active{
@@ -280,7 +272,7 @@ body{
 }
 .nav-ul.nav-xs-ul{
     position: absolute;
-    top: 70px;
+    top: 60px;
     left:0;
     width:100%;
     padding-bottom: 1em;
@@ -356,10 +348,7 @@ div.skill p{
 	width:150px;
 	border-radius:50%;
 	box-shadow: 5px 5px 10px gray;
-<<<<<<< HEAD
 	margin-left: 10%;
-=======
->>>>>>> origin/gh-pages
 	position: relative;
 	overflow: hidden;
 	}
@@ -371,7 +360,7 @@ div.skill p{
 	top:50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-   height: 100%;
+   	height: 100%;
     border-radius: 0!important;
     vertical-align: middle;
 }
@@ -697,8 +686,8 @@ aside{
         display: block;
     }
     #section4 .container>div .imgbox img{
-        -webkit-filter: brightness(0.3);
-        filter: brightness(0.3);
+        -webkit-filter: brightness(0.6);
+        filter: brightness(0.6);
     }
     #section6 .fades{
         width: 80%;
@@ -781,6 +770,33 @@ aside{
         margin-top: 20px;
     }
 
+	}
+#section4 .container > div .zp-cover h4{
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-top: 25px;
+}
 
+#section4 .container > div .zp-cover p{
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    margin: 10px 0;
+    padding: 0 1em;
+}
+#section4 .container > div .zp-cover i{
+    font-size: 40px;
+    color: yellow;
+}
+
+#section4 .container > div:hover .zp-cover{
+    display: block;
+    padding:  0 1em;
+}
+#section4 .container > div:hover .imgbox img{
+    -webkit-filter: brightness(0.6);
+    filter: brightness(0.6);
+}
 
 }
